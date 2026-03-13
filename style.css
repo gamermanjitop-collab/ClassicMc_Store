@@ -1,40 +1,165 @@
 body{
 margin:0;
-font-family:Arial;
-background:#0f172a;
+font-family:Arial, sans-serif;
+background:linear-gradient(180deg,#0f172a,#020617);
 color:white;
 text-align:center;
 }
 
+/* Navbar */
+
 .navbar{
 display:flex;
 justify-content:space-between;
-padding:15px;
+align-items:center;
+padding:15px 30px;
 background:#020617;
+box-shadow:0 0 10px black;
 }
 
 .menu a{
-margin-left:15px;
+margin-left:20px;
 color:white;
 text-decoration:none;
 font-weight:bold;
 }
 
+.menu a:hover{
+color:orange;
+}
+
+/* Hero Section */
+
 .hero{
-padding:120px 20px;
+padding:100px 20px;
 }
 
 .join{
 background:orange;
 padding:12px 25px;
-color:white;
-text-decoration:none;
 border-radius:6px;
+text-decoration:none;
+color:white;
+font-weight:bold;
 }
 
-.title{
-margin-top:40px;
+/* Store Grid */
+
+.store{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:40px;
 }
+
+/* Store Card */
+
+.card{
+background:#111827;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px orange;
+}
+
+/* Button */
+
+button{
+background:orange;
+border:none;
+padding:10px 25px;
+border-radius:6px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff8c00;
+}
+
+/* Rank Colors */
+
+.vipplus{
+border:3px solid gold;
+}
+
+.vip{
+border:3px solid yellow;
+}
+
+.mvp{
+border:3px solid aqua;
+}
+
+.god{
+border:3px solid red;
+}
+
+.immortal{
+border:3px solid purple;
+}
+
+.titan{
+border:3px solid blue;
+}
+
+.legendary{
+border:3px solid orange;
+}
+
+.legend{
+border:3px solid green;
+}
+
+.magnate{
+border:3px solid pink;
+}
+
+.master{
+border:3px solid cyan;
+}
+
+.hero{
+border:3px solid lime;
+}
+
+.ancestral{
+border:3px solid gray;
+}
+
+/* Coins */
+
+.coin{
+border:3px solid gold;
+}
+
+/* Mobile */
+
+@media (max-width:700px){
+
+.navbar{
+flex-direction:column;
+}
+
+.menu{
+margin-top:10px;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+.store{
+grid-template-columns:1fr;
+}
+
+}}
 
 .store{
 display:grid;
